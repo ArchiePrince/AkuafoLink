@@ -34,6 +34,24 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style type="text/css">
+
+    #edit_actor{
+      max-width: 500px;
+      border-radius: 20%;
+      display: none;
+    }
+
+    #project_form{
+      max-width: 800px;
+      border-radius: 20%;
+      display: none;
+    }
+
+  </style>
+
+
 </head>
 
 <body>
@@ -137,8 +155,8 @@
             <li><a href="market.php">Market</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <li><a href="login.php" class="btn">Login</a></li>
-            <li style="background-color: green;"><a href="register.php" class="btn text-light">Register</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
           <?php
             }elseif ($page == 'about') {
           ?>
@@ -147,8 +165,8 @@
             <li><a href="market.php">Market</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <li><a href="login.php" class="btn">Login</a></li>
-            <li style="background-color: green;"><a href="register.php" class="btn text-light">Register</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
           <?php
             }elseif ($page == 'market') {
           ?>
@@ -157,8 +175,8 @@
             <li class="active"><a href="market.php">Market</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <li><a href="login.php" class="btn">Login</a></li>
-            <li style="background-color: green;"><a href="register.php" class="btn text-light">Register</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
           <?php
             }elseif ($page == 'contact') {
           ?>
@@ -167,8 +185,8 @@
             <li><a href="market.php">Market</a></li>
             <li class="active"><a href="contact.php">Contact</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <li><a href="login.php" class="btn">Login</a></li>
-            <li style="background-color: green;"><a href="register.php" class="btn text-light">Register</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
           <?php
             }elseif ($page == 'faq') {
           ?>
@@ -177,11 +195,22 @@
             <li><a href="market.php">Market</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li class="active"><a href="faq.php">FAQ</a></li>
-            <li><a href="login.php" class="btn">Login</a></li>
-            <li style="background-color: green;"><a href="register.php" class="btn text-light">Register</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          <?php
+            }elseif ($page == 'profile') {
+          ?>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="market.php">Market</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+            <li class="active"><a href="profile.php">Profile</a></li>
+            <li><a href="logout.php">Logout</a></li>
           <?php
             }
           ?>
+  
 
         </ul>
       </nav><!-- .nav-menu -->

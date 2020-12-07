@@ -1,13 +1,13 @@
 <?php
-  $page = 'market';
-  include('assets/layouts/header1.php');
+  $page = 'profile';
+  include('assets/layouts/header2.php');
 ?>
 
   <main id="main">
 
     <div class="container">
       <h1 class="text-center py-4">
-        Market
+        Profile
       </h1>
     </div>
 
@@ -35,30 +35,6 @@
           </div>
         </div>
 
-        <div class="row m-5">
-          <h5>Quantity:</h5>
-          &emsp;
-          <form>
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-
-            &nbsp;
-
-            <input type="submit" name="submit_buy" class="btn py-1" style="background-color: green; color: #fff;" value="Buy">
-          </form>
-        </div>
-
-      </div>
       <!-- /.row -->
     <!-- /.container -->
 
