@@ -1,11 +1,11 @@
 <?php
-  $page = 'blog';
+  $page = 'blogs';
   include('assets/layouts/header1.php');
 ?>
 
   <main id="main">
 
-    <div class="container">
+    <div class="container" id="container">
       <h1 class="py-4">
         Blog Heading
       </h1>
