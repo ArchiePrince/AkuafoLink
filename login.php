@@ -1,3 +1,23 @@
+<?php include 'server.php'; ?>
+<?php
+  // index.php
+// ...
+
+require 'vendor/autoload.php';
+use Auth0\SDK\Auth0;
+
+$auth0 = new Auth0([
+  'domain' => 'akuafolink.us.auth0.com',
+  'client_id' => 'R0uCnHSVmNUxstEIg5RUSEa90whieBdF',
+  'client_secret' => 'yN1uesgoRTn10ISoX43dPxGK29zI86nMLKGK1EmR_v6vtPcuj_LDZtSj3v6SQ15j',
+  'redirect_uri' => 'http://localhost:8080/AkuafoLinkProject/AkuafoLink-master/profile.php',
+  'scope' => 'openid profile email',
+]);
+$auth0->login();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
