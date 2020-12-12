@@ -10,7 +10,7 @@ $auth0 = new Auth0([
   'domain' => 'akuafolink.us.auth0.com',
   'client_id' => 'R0uCnHSVmNUxstEIg5RUSEa90whieBdF',
   'client_secret' => 'yN1uesgoRTn10ISoX43dPxGK29zI86nMLKGK1EmR_v6vtPcuj_LDZtSj3v6SQ15j',
-  'redirect_uri' => 'http://localhost:8080/AkuafoLinkProject/AkuafoLink-master/profile.php',
+  'redirect_uri' => 'https://akuafolink.herokuapp.com/profile.php',
   'scope' => 'openid profile email',
 ]);
 $auth0->login();
