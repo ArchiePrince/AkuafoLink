@@ -11,6 +11,9 @@
   <title>Akuafolink</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+   <!--Web Monetization-->
+  <meta name="monetization"
+  content="$ilp.uphold.com/p8geiQgJ9zQr">
 
   <!-- Favicons -->
   <!-- <link href="assets/img/favicon.png" rel="icon"> -->
