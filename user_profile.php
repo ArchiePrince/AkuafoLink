@@ -176,5 +176,6 @@
   document.getElementById('cancel_project').addEventListener('click', function(){
     document.getElementById('project_form').style.display = 'none';
   });
+  
 
 </script>
