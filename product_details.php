@@ -111,13 +111,12 @@
    // document.monetization: EventTarget
   // document.monetization.state: 'stopped' | 'pending' | 'started';
   
-  if(document.monetization){
-    alert('Thank you for being a Web Monetization Subscriber');
-    alert('You have been rewarded with a coupon');
-  }
+
   
   if (document.monetization) {
-      document.monetization.addEventListener('monetizationstart', () => {
+        alert('Thank you for being a Web Monetization Subscriber');
+        alert('You have been rewarded with a coupon');
+        document.monetization.addEventListener('monetizationstart', () => {
         document.getElementById('coupon').classList.remove('wm-hidden')
       })
     }
