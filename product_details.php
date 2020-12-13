@@ -12,6 +12,11 @@
   // Header when regular user logs in
   // include('assets/layouts/header4.php');
 ?>
+<style>
+    .wm-hidden {
+      display: none;
+    }
+  </style>
 
   <main id="main">
 
@@ -25,7 +30,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="col-lg-8 col-sm-6 mb-4">
           <div class="card h-10">
             <a href="#"><img class="card-img-top" src="assets/img/farm_produce_0.1.png" alt="Farm produce"></a>
             <div class="card-body">
@@ -44,6 +49,15 @@
               <!-- <p class="card-text text-center">Farm produce</p> -->
             </div>
           </div>
+          
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div id="coupon" class="wm-hidden">
+              <h3>REWARD</h3>
+              <p>Use this coupon when checking out</p>
+              <p>WEB-MONETIZATION-0001</p>
+            </div>            
+          </div>  
+          
         </div>
 
         <div class="row m-5">
@@ -91,4 +105,15 @@
       $_SESSION['cart_count'] = (int)$_SESSION['cart_count'] + 1;
     ?>
   });
+  
+  if(document.monetization){
+    alert('Thank you for being a Web Monetization Subscriber');
+    alert('You have been rewarded with a coupon');
+  }
+  
+  if (document.monetization) {
+      document.monetization.addEventListener('monetizationstart', () => {
+        document.getElementById('coupon').classList.remove('wm-hidden')
+      })
+    }
 </script>
