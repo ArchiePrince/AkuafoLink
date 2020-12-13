@@ -106,6 +106,11 @@
     ?>
   });
   
+  //Web Monetization Implementation
+  
+   // document.monetization: EventTarget
+  // document.monetization.state: 'stopped' | 'pending' | 'started';
+  
   if(document.monetization){
     alert('Thank you for being a Web Monetization Subscriber');
     alert('You have been rewarded with a coupon');
