@@ -32,6 +32,24 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <!-- Vonage API -->
+  <?php
+    require_once "assets/vendor/autoload.php";
+    define("API_KEY", "5e2f42f7");
+    define("API_SECRET", "igwMW40PUZXug48l");
+
+    $client = new Vonage\Client(new Vonage\Client\Credentials\Basic(API_KEY, API_SECRET));
+
+    $text = new \Vonage\SMS\Message\SMS(VONAGE_TO, VONAGE_FROM, 'Test message using PHP client library');
+    $text->setClientRef('test-message');
+
+    $response = $client->sms()->send($text);
+
+    $data = $response->current();
+    echo "Sent message to " . $data->getTo();
+
+  ?>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
